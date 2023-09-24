@@ -1,0 +1,60 @@
+.bgWrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    z-index: -1;
+    background: black;
+}
+
+.bg-1 {
+    position: absolute;
+    top: 0;
+}
+
+.bg-2 {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.bg-3 {
+    bottom: 0;
+    position: absolute;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.membership-btn {
+    position: relative;
+    width: fit-content;
+}
+
+.membership-btn::after {
+    top: -2px;
+    left: -4px;
+    box-sizing: content-box;
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 2px 4px;
+    background: linear-gradient(90deg, rgba(245, 133, 34, 0.25) 0%, rgba(255, 143, 147, 0.25) 100%);
+    filter: blur(6px);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.dex-wrapper {
+    background-image: url('../../assets//images/dex-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
